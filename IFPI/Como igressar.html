@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="ifpi.css">
+    <title>IFPI - Cursos e Como Ingressar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        header ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        header ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        header .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        header .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        header .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        header .dropdown-content a:hover {
+            background-color: #575757;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        .left, .right {
+            width: 48%;
+        }
+        footer {
+            background: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        footer .left p {
+            margin: 5px 0;
+        }
+        section {
+            margin: 40px 0;
+        }
+        .course-info {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <ul>
+        <li><a href="matrícula.html" class="dropbtn">Efetuar Matrícula</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Cursos</a>
+            <div class="dropdown-content">
+                <a href="#informatica">Informática</a>
+                <a href="#administracao">Administração</a>
+                <a href="#agropecuaria">Agropecuária</a>
+                <a href="#mineral">Mineração</a>
+            </div>
+        </li>
+        <li><a href="index.HTML" class="dropbtn">Início</a></li>
+    </ul>
+</header>
+
+<main>
+    <section id="ingresso">
+        <div class="container w3-card-4 w3-margin w3-white">
+            <div class="left">
+                <h2>Como Ingressar no IFPI</h2>
+                <p>Para ingressar no IFPI, você precisa passar pelo processo seletivo, que ocorre anualmente. O processo é composto por:</p>
+                <ul>
+                    <li><strong>Prova de Seleção:</strong> Avaliação de conhecimentos gerais.</li>
+                    <li><strong>Documentação:</strong> Apresentação de documentos pessoais e acadêmicos.</li>
+                    <li><strong>Lista de Classificados:</strong> Divulgação dos aprovados e convocação para matrícula.</li>
+                </ul>
+                <p>Acompanhe o nosso site para mais detalhes sobre as inscrições e datas importantes.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="informatica">
+        <div class="container w3-card-4 w3-margin w3-white">
+            <div class="left">
+                <h2>Curso de Informática</h2>
+                <div class="course-info">
+                    <h3>Sobre o curso</h3>
+                    <p>O curso de Informática oferece uma formação completa, com ênfase em desenvolvimento de software, redes de computadores e infraestrutura tecnológica.</p>
+                </div>
+                <div class="course-info">
+                    <h3>Pré-Requisitos</h3>
+                    <ul>
+                        <li>Ensino Médio completo ou cursando.</li>
+                        <li>Conhecimentos básicos em informática.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <img src="informatica.jpg" alt="Curso de Informática" style="width:100%">
+            </div>
+        </div>
+    </section>
+
+    <section id="administracao">
+        <div class="container w3-card-4 w3-margin w3-white">
+            <div class="left">
+                <h2>Curso de Administração</h2>
+                <div class="course-info">
+                    <h3>Sobre o curso</h3>
+                    <p>O curso de Administração prepara o estudante para atuar em gestão de pessoas, processos e recursos financeiros, em diferentes áreas de uma organização.</p>
+                </div>
+                <div class="course-info">
+                    <h3>Pré-Requisitos</h3>
+                    <ul>
+                        <li>Ensino Médio completo.</li>
+                        <li>Interesse pela área de gestão e negócios.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <img src="administracao.jpg" alt="Curso de Administração" style="width:100%">
+            </div>
+        </div>
+    </section>
+
+    <section id="agropecuaria">
+        <div class="container w3-card-4 w3-margin w3-white">
+            <div class="left">
+                <h2>Curso de Agropecuária</h2>
+                <div class="course-info">
+                    <h3>Sobre o curso</h3>
+                    <p>O curso de Agropecuária forma profissionais capazes de atuar no campo, no desenvolvimento e gestão de atividades agrícolas e pecuárias, com foco em sustentabilidade.</p>
+                </div>
+                <div class="course-info">
+                    <h3>Pré-Requisitos</h3>
+                    <ul>
+                        <li>Ensino Médio completo.</li>
+                        <li>Interesse por atividades rurais e agropecuárias.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <img src="agropecuaria.jpg" alt="Curso de Agropecuária" style="width:100%">
+            </div>
+        </div>
+    </section>
+
+    <section id="mineral">
+        <div class="container w3-card-4 w3-margin w3-white">
+            <div class="left">
+                <h2>Curso de Mineração</h2>
+                <div class="course-info">
+                    <h3>Sobre o curso</h3>
+                    <p>O curso de Mineração forma profissionais capacitados para trabalhar na extração e processamento de minerais, além de atuar em questões ambientais e segurança no setor.</p>
+                </div>
+                <div class="course-info">
+                    <h3>Pré-Requisitos</h3>
+                    <ul>
+                        <li>Ensino Médio completo.</li>
+                        <li>Interesse por atividades industriais e geológicas.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <img src="mineral.jpg" alt="Curso de Mineração" style="width:100%">
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <div class="container">
+        <div class="left">
+            <h3>Endereço</h3>
+            <p>IFPI - Paulistana</p>
+            <p>Rodovia BR 407, km 5, s/n</p>
+            <p>Paulistana - PI, 64750-000</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="ifpi.css">
+    <title>Efetuar Matrícula</title>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="Como igressar.html">Como Ingressar</a></li>
+            <li><a href="index.html">Início</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Formulário de Matrícula</h2>
+            <p>Preencha os campos abaixo para efetuar sua matrícula no IFPI.</p>
+
+            <form action="/enviar_matricula" method="POST">
+                <div class="w3-section">
+                    <label for="nome">Nome Completo:</label>
+                    <input class="w3-input w3-border" type="text" id="nome" name="nome" required>
+                </div>
+                
+                <div class="w3-section">
+                    <label for="cpf">CPF:</label>
+                    <input class="w3-input w3-border" type="text" id="cpf" name="cpf" required>
+                </div>
+                
+                <div class="w3-section">
+                    <label for="data_nascimento">Data de Nascimento:</label>
+                    <input class="w3-input w3-border" type="date" id="data_nascimento" name="data_nascimento" required>
+                </div>
+
+                <div class="w3-section">
+                    <label for="curso">Curso de Interesse:</label>
+                    <select class="w3-select w3-border" id="curso" name="curso" required>
+                        <option value="" disabled selected>Escolha o curso</option>
+                        <option value="tecnologia">Técnico em Informática</option>
+                        <option value="adm">Técnico em Administração</option>
+                        <option value="quimica">Técnico em Agropecuária</option>
+                        <option value="informática">Técnico em Mineração</option>
+                    </select>
+                </div>
+
+                <div class="w3-section">
+                    <label for="endereco">Endereço Completo:</label>
+                    <input class="w3-input w3-border" type="text" id="endereco" name="endereco" required>
+                </div>
+
+                <div class="w3-section">
+                    <label for="email">E-mail:</label>
+                    <input class="w3-input w3-border" type="email" id="email" name="email" required>
+                </div>
+
+                <div class="w3-section">
+                    <label for="telefone">Telefone:</label>
+                    <input class="w3-input w3-border" type="tel" id="telefone" name="telefone" required>
+                </div>
+
+                <div class="w3-section">
+                    <button type="submit" class="w3-button w3-blue">Efetuar Matrícula</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="left">
+                <h3>Endereço</h3>
+                <p>IFPI - Paulistana</p>
+                <p>Rodovia BR 407, km 5, s/n</p>
+                <p>Paulistana - PI, 64750-000</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
